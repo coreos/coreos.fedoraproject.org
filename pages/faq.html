@@ -41,7 +41,7 @@
   <p>The CoreOS <a href="https://coreos.com/why/#updates">Update Philosophy</a> stays as important to us as always. Yes, Fedora CoreOS comes with automatic updates and regular releases. Multiple update channels are provided catering to different users' needs. It will introduce a new node-update service based on rpm-ostree technologies, with a server component that can be optionally self-hosted. Failures that prevent an update from booting will automatically be reverted.</p>
 
   <h2>How are Fedora CoreOS nodes provisioned? Can I re-use existing cloud-init configurations?</h2>
-  <p>Fedora CoreOS will be provisioned with Ignition. However, existing Ignition configurations may require changes, as the OS configuration will be different from Container Linux (for example, NetworkManager will be used). Existing cloud-init configurations are not supported and will need to be migrated into their Ignition equivalent.</p>
+  <p>Fedora CoreOS will be provisioned with Ignition. However, existing Ignition configurations may require changes, as the OS configuration will be different from Container Linux (for example, it's likely initially NetworkManager will be used). Existing cloud-init configurations are not supported and will need to be migrated into their Ignition equivalent.</p>
 
   <h2>How do I migrate from Container Linux to Fedora CoreOS?</h2>
   <p>Migration will be accomplished by re-provisioning the machine with Fedora CoreOS. We will provide documentation to make this easier, as well as tooling to help convert existing cloud-configs and Ignition configs for use on Fedora CoreOS.</p>
