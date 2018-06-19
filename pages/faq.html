@@ -1,0 +1,79 @@
+<!-- See structure.html for the template names used here and their position in the layout. -->
+{{define "title"}}Fedora CoreOS FAQ{{end}}
+
+{{define "body"}}
+<article>
+  <h1>Fedora CoreOS Frequently Asked Questions</h1>
+  <p>If you have other questions than are mentioned here or want to discuss further, join us in our IRC channel, irc://irc.freenode.org/#fedora-coreos, or on our new <a href="https://discussion.fedoraproject.org/c/coreos">discussion board</a>. Please refer back here as some questions and answers will likely get updated.</p>
+
+  <h2>What is Fedora CoreOS?</h2>
+  <p>Fedora CoreOS aims to combine the best of both CoreOS Container Linux and Fedora Atomic Host. The two operating systems are very similar in goals and philosophy. Fedora CoreOS targets the same use case, combining technology like Ignition from Container Linux with the SELinux hardening from Project Atomic. Its goal is to provide the best container host to run containerized workloads securely and at scale.<p>
+
+  <h2>How does Fedora CoreOS relate to Red Hat CoreOS?</h2>
+  <p>Fedora CoreOS is a freely available, community distribution that is the upstream basis for Red Hat CoreOS. While both are similar, Red Hat CoreOS is targeted at being an immutable host for OpenShift and is life-cycled and released with the platform. Fedora CoreOS will support more varied use cases than Red Hat CoreOS.</p>
+
+  <h2>Does Fedora CoreOS replace Container Linux? What happens to CL?</h2>
+  <p>Fedora CoreOS will eventually become the successor to Container Linux. The Container Linux project has a large install base - it is a top priority to not disrupt that. The project will continue to be supported at least throughout 2019, and allow users ample time to migrate and provide feedback. Existing Container Linux users can be confident that support will continue while the next version is being created in parallel, in a non-disruptive way.</p>
+
+  <h2>Does Fedora CoreOS replace Fedora Atomic Host? What happens to Fedora Atomic Host and CentOS Atomic Host?</h2>
+  <p>Fedora CoreOS will also become the successor to Fedora Atomic Host. The current plan is for Fedora Atomic Host to have at least a 29 version and 6 months of lifecycle.</p>
+  <p>CentOS Atomic Host will continue producing downstream rebuilds of RHEL Atomic Host and will align with the end-of-life. The Fedora CoreOS project will be the consolidation point for the community distributions. Users are encouraged to move there in the future.</p>
+
+  <h2>What happens to Project Atomic?</h2>
+  <p>Project Atomic is an umbrella project consisting of two flavors of Atomic Host (Fedora and CentOS) as well as various other container-related projects. Project Atomic as a project name will be sunset by the end of 2018 with a stronger invidivual focus on its successful projects such as Buildah and Cockpit. This merges the community side of the operating system more effectively with Fedora and allows for a clearer communication for other community-supported projects, specifically the well-adopted <a href="https://twitter.com/hashtag/nobigfatdaemons?src=hash">#nobigfatdaemons</a> approach of <a href="https://github.com/projectatomic/buildah">Buildah</a> and the versatile GUI server manager <a href="https://cockpit-project.org/">Cockpit</a>.</p>
+
+  <h2>What are the communication channels around Fedora CoreOS?</h2>
+  <p>We have the following new communication channels around Fedora CoreOS:</p>
+  <ul>
+    <li>mailing list: coreos@fedoraproject.org
+    <li>#fedora-coreos on IRC Freenode
+    <li>forum at <a href="https://discussion.fedoraproject.org/c/coreos">https://discussion.fedoraproject.org/c/coreos</a>
+    <li>website at <a href="https://coreos.fedoraproject.org/">https://coreos.fedoraproject.org/</a>
+    <li>Twitter <a href="https://twitter.com/coreos">@coreos</a> (specific to CoreOS and containers) and <a href="https://twitter.com/fedora">@fedora</a> (all Fedora and other relevant news)
+  </ul>
+
+  <h1>Technical FAQ</h1>
+
+  <h2>Where can I download Fedora CoreOS?</h2>
+  <p>Fedora CoreOS is under active development and there are currently no downloads available. However, you will be able to download the images from one canonical location via the CoreOS and Fedora websites. The discussions around this development will happen on our community channels.</p>
+
+  <h2>Does Fedora CoreOS embrace the Container Linux Update Philosophy? </h2>
+  <p>The CoreOS <a href="https://coreos.com/why/#updates">Update Philosophy</a> stays as important to us as always. Yes, Fedora CoreOS comes with automatic updates and regular releases. Multiple update channels are provided catering to different users' needs. It will introduce a new node-update service based on rpm-ostree technologies, with a server component that can be optionally self-hosted. Failures that prevent an update from booting will automatically be reverted.</p>
+
+  <h2>How are Fedora CoreOS nodes provisioned? Can I re-use existing cloud-init configurations?</h2>
+  <p>Fedora CoreOS will be provisioned with Ignition. However, existing Ignition configurations may require changes, as the OS configuration will be different from Container Linux (for example, NetworkManager will be used). Existing cloud-init configurations are not supported and will need to be migrated into their Ignition equivalent.</p>
+
+  <h2>How do I migrate from Container Linux to Fedora CoreOS?</h2>
+  <p>Migration will be accomplished by re-provisioning the machine with Fedora CoreOS. We will provide documentation to make this easier, as well as tooling to help convert existing cloud-configs and Ignition configs for use on Fedora CoreOS.</p>
+
+  <h2>How do I migrate from Fedora Atomic Host to Fedora CoreOS?</h2>
+  <p>Like Container Linux, best practice will be re-provisioning, due to the cloud-init/Ignition transition at least. Since Fedora CoreOS will be using the rpm-ostree technology, it may be possible to rebase from Fedora Atomic Host to Fedora CoreOS.  This will be part of a  "migrating from Fedora Atomic Host" guide which will be published as soon as an actual version of Fedora CoreOS is available.</p>
+
+  <h2>Which container runtimes are available on Fedora CoreOS?</h2>
+  <p>Fedora CoreOS includes Docker, podman, and the CRI-O container runtimes by default. Based on community engagement and support this list could change over time.</p>
+
+  <h2>What platforms does Fedora CoreOS support?</h2>
+  <p>Fedora CoreOS is expected to run on at least</p>
+  <ul>
+    <li>AWS,
+    <li>Azure,
+    <li>DigitalOcean,
+    <li>GCE,
+    <li>Packet;
+    <li>OpenStack,
+    <li>QEMU,
+    <li>VirtualBox,
+    <li>VMware;
+    <li>and bare-metal systems if installed to disk or network-booted.</p>
+  </ul>
+
+  <h2>Can I run Kubernetes on Fedora CoreOS?</h2>
+  <p>Yes. However, we envision Fedora CoreOS as not including a specific container orchestrator (or version of Kubernetes) by default — just like Container Linux and Atomic Host. We will work with the upstream Kubernetes community on tools (e.g. kubeadm) and best practices for installing Kubernetes on Fedora CoreOS.</p>
+
+  <h2>How do I run custom applications on Fedora CoreOS?</h2>
+  <p>On Fedora CoreOS, containers are the way to install and configure any software not provided by the base operating system. The package layering mechanism provided by rpm-ostree will continue to exist for use in debugging a Fedora CoreOS machine, but we discourage its use in production. For more about this, please refer to upcoming documentation.</p>
+
+  <h2>How do I coordinate cluster-wide OS updates? Is locksmith or "Container Linux Update Operator" available for Fedora CoreOS?</h2>
+  <p>We have ported the Container Linux Update Operator to use rpm-ostree in the upstream repo. If you are using Fedora CoreOS outside of a Kubernetes cluster, you will be able to use upcoming tools to coordinate updates and reboots.</p>
+</article>
+{{end}}

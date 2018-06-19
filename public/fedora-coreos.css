@@ -118,11 +118,10 @@ img.blog-image {
   padding: 10px; }
 
 ul li {
-  list-style-type: none;
+  list-style-type: disc;
   padding: 0 0 0 20px;
   vertical-align: middle;
-  margin: .5em 0;
-  background: url(/public/bullet.svg) no-repeat left 4px; }
+  margin: .5em 0; }
 
 footer {
   text-align: center;
@@ -142,7 +141,8 @@ footer {
   margin: 0 10px 0 0;
   fill: #729fcf;
   transition: all 400ms ease-in-out; }
-  a:hover .icon {
+
+a:hover .icon {
     fill: black; }
 
 pre {
