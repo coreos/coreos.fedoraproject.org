@@ -13,7 +13,7 @@
   <p>Fedora CoreOS is a freely available, community distribution that is the upstream basis for Red Hat CoreOS. While both are similar, Red Hat CoreOS is targeted at being an immutable host for OpenShift and is life-cycled and released with the platform. Fedora CoreOS will support more varied use cases than Red Hat CoreOS.</p>
 
   <h2>Does Fedora CoreOS replace Container Linux? What happens to CL?</h2>
-  <p>Fedora CoreOS will eventually become the successor to Container Linux. The Container Linux project has a large install base - it is a top priority to not disrupt that. The project will continue to be supported at least throughout 2019, and allow users ample time to migrate and provide feedback. Existing Container Linux users can be confident that support will continue while the next version is being created in parallel, in a non-disruptive way.</p>
+  <p>Fedora CoreOS will eventually become the successor to Container Linux. The Container Linux project has a large installed base - it is a top priority to not disrupt that. The project will continue to be supported at least throughout 2019, allowing users ample time to migrate and provide feedback. Existing Container Linux users can be confident that support will continue while the next version is being created in parallel, in a non-disruptive way.</p>
 
   <h2>Does Fedora CoreOS replace Fedora Atomic Host? What happens to Fedora Atomic Host and CentOS Atomic Host?</h2>
   <p>Fedora CoreOS will also become the successor to Fedora Atomic Host. The current plan is for Fedora Atomic Host to have at least a 29 version and 6 months of lifecycle.</p>
@@ -47,10 +47,10 @@
   <p>Migration will be accomplished by re-provisioning the machine with Fedora CoreOS. We will provide documentation to make this easier, as well as tooling to help convert existing cloud-configs and Ignition configs for use on Fedora CoreOS.</p>
 
   <h2>How do I migrate from Fedora Atomic Host to Fedora CoreOS?</h2>
-  <p>Like Container Linux, best practice will be re-provisioning, due to the cloud-init/Ignition transition at least. Since Fedora CoreOS will be using the rpm-ostree technology, it may be possible to rebase from Fedora Atomic Host to Fedora CoreOS.  This will be part of a  "migrating from Fedora Atomic Host" guide which will be published as soon as an actual version of Fedora CoreOS is available.</p>
+  <p>As with Container Linux, the best practice will be re-provisioning, due to the cloud-init/Ignition transition at least. Since Fedora CoreOS will be using rpm-ostree technology, it may be possible to rebase from Fedora Atomic Host to Fedora CoreOS.  This will be part of a  "migrating from Fedora Atomic Host" guide which will be published as soon as an actual version of Fedora CoreOS is available.</p>
 
   <h2>Which container runtimes are available on Fedora CoreOS?</h2>
-  <p>Fedora CoreOS includes Docker, podman, and the CRI-O container runtimes by default. Based on community engagement and support this list could change over time.</p>
+  <p>Fedora CoreOS includes the Docker, podman, and CRI-O container runtimes by default. Based on community engagement and support this list could change over time.</p>
 
   <h2>What platforms does Fedora CoreOS support?</h2>
   <p>Fedora CoreOS is expected to run on at least</p>
@@ -73,7 +73,7 @@
   <h2>How do I run custom applications on Fedora CoreOS?</h2>
   <p>On Fedora CoreOS, containers are the way to install and configure any software not provided by the base operating system. The package layering mechanism provided by rpm-ostree will continue to exist for use in debugging a Fedora CoreOS machine, but we discourage its use in production. For more about this, please refer to upcoming documentation.</p>
 
-  <h2>How do I coordinate cluster-wide OS updates? Is locksmith or "Container Linux Update Operator" available for Fedora CoreOS?</h2>
+  <h2>How do I coordinate cluster-wide OS updates? Is locksmith or the Container Linux Update Operator available for Fedora CoreOS?</h2>
   <p>We have ported the Container Linux Update Operator to use rpm-ostree in the upstream repo. If you are using Fedora CoreOS outside of a Kubernetes cluster, you will be able to use upcoming tools to coordinate updates and reboots.</p>
 </article>
 {{end}}
