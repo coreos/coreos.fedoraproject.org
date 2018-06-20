@@ -71,7 +71,7 @@
   <p>Yes. However, we envision Fedora CoreOS as not including a specific container orchestrator (or version of Kubernetes) by default — just like Container Linux and Atomic Host. We will work with the upstream Kubernetes community on tools (e.g. kubeadm) and best practices for installing Kubernetes on Fedora CoreOS.</p>
 
   <h2>How do I run custom applications on Fedora CoreOS?</h2>
-  <p>On Fedora CoreOS, containers are the way to install and configure any software not provided by the base operating system. The package layering mechanism provided by rpm-ostree will continue to exist for use in debugging a Fedora CoreOS machine, but we discourage its use in production. For more about this, please refer to upcoming documentation.</p>
+  <p>On Fedora CoreOS, containers are the way to install and configure any software not provided by the base operating system. The package layering mechanism provided by rpm-ostree will continue to exist for use in debugging a Fedora CoreOS machine, but we strongly discourage its use in production. For more about this, please refer to upcoming documentation.</p>
 
   <h2>How do I coordinate cluster-wide OS updates? Is locksmith or "Container Linux Update Operator" available for Fedora CoreOS?</h2>
   <p>We have ported the Container Linux Update Operator to use rpm-ostree in the upstream repo. If you are using Fedora CoreOS outside of a Kubernetes cluster, you will be able to use upcoming tools to coordinate updates and reboots.</p>
