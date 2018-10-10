@@ -5,13 +5,13 @@ categories: [new]
 tags: community, open source, fcos
 ---
 
-![Fedora CoreOS logo](https://github.com/coreos/coreos.fedoraproject.org/blob/master/images/fedoracoreos-logo.svg)
+![Fedora CoreOS logo](https://coreos.fedoraproject.org/images/fedoracoreos-logo.svg)
 
 # Welcome to Fedora CoreOS!
 
 **Note:** This site and project are currently very dynamic and will change a lot within the next weeks and months. Please refer to the <a href="/faq">FAQ</a> for more information for the time being. If you want to help or ask any questions, [IRC channel](irc://irc.freenode.org/#fedora-coreos), or join our new [discussion board](https://discussion.fedoraproject.org/c/coreos). Links to documentation and more will be added once they're available.
 
-![Welcome to Fedora CoreOS](https://github.com/coreos/coreos.fedoraproject.org/blob/master/images/welcomefedoracoreos.jpg)
+![Welcome to Fedora CoreOS](https://coreos.fedoraproject.org/images/welcomefedoracoreos.jpg)
 
 Fedora CoreOS is an automatically updating, minimal, monolithic, container-focused operating system, designed for clusters but also operable standalone, optimized for Kubernetes but also great without it. It aims to combine the best of both CoreOS Container Linux and Fedora Atomic Host, integrating technology like Ignition from Container Linux with rpm-ostree and SELinux hardening from Project Atomic. Its goal is to provide the best container host to run containerized workloads securely and at scale.
 
@@ -21,7 +21,7 @@ Fedora CoreOS is an open source project associated with the Fedora Project. We a
 
 We asked the CoreOS and Fedora communities the question, *"Where should we have topical discussions (features, bugs) around Fedora CoreOS?"* - the results were clearly in GitHub's favor which is why the [issue tracker](https://github.com/coreos/fedora-coreos-tracker) has since been on GitHub. The form was shared via the Fedora and CoreOS communities on mailing lists, IRC, and Twitter.
 
-![github vs pagure results](https://github.com/coreos/coreos.fedoraproject.org/tree/master/images/results.png "github vs pagure results chart")
+![github vs pagure results](https://coreos.fedoraproject.org/images/results.png "github vs pagure results chart")
 
 The overall vote count of 184 (182 on the form plus 2 external votes that had no Google account) is distributed as follows:
 
