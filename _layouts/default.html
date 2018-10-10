@@ -19,26 +19,14 @@
         <p class="header"></p>
 
         <ul>
-          <li><a class="buttons" href="{{ site.baseurl }}/blogs">Blogs</a>
-          <li><a class="buttons" href="{{ site.baseurl }}/talks">Talks</a>
-          <li><a class="buttons" href="https://discussion.fedoraproject.org/c/coreos">Discussion</a>
           <li><a class="buttons" href="{{ site.baseurl }}/blogs/faq.html">FAQ</a>
+          <li><a class="buttons" href="https://discussion.fedoraproject.org/c/coreos">Discussion</a>
           <li><a class="buttons github" href="https://github.com/coreos/fedora-coreos-tracker">Issue Tracker</a>
           <li><a class="buttons github" href="{{ site.github.repository_url }}">Edit Website</a>
         </ul>
 
-        {% if site.github.is_project_page %}
-          <p class="header">This project is maintained by the <a class="header name" href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a> organization.</p>
-        {% endif %}
-
-        {% if site.github.is_user_page %}
-          <ul>
-            <li><a class="buttons github" href="{{ site.github.owner_url }}">GitHub Profile</a></li>
-          </ul>
-        {% endif %}
-
         <a href="https://fedoraproject.org/wiki/Legal:PrivacyPolicy">Privacy Policy</a>
-        <p id="copyright">&copy; 2018 Fedora CoreOS.</p>
+        <p id="copyright">&copy; 2018 Fedora CoreOS</p>
       </header>
 
       <section>
