@@ -9,7 +9,7 @@ tags: community, open source, fcos
 
 # Welcome to Fedora CoreOS!
 
-**Note:** This site and project are currently very dynamic and will change a lot within the next weeks and months. Please refer to the <a href="https://coreos.fedoraproject.org/blogs/faq.html">FAQ</a> for more information for the time being. If you want to help or ask any questions, [IRC channel](irc://irc.freenode.org/#fedora-coreos), or join our new [discussion board](https://discussion.fedoraproject.org/c/coreos). Links to documentation and more will be added once they're available.
+**Note:** This site and project are currently very dynamic and will change a lot within the next weeks and months. Please refer to the <a href="https://coreos.fedoraproject.org/blogs/faq.html">FAQ</a> for more information for the time being. If you want to help or ask any questions, [IRC channel](irc://irc.freenode.org/#fedora-coreos), or join our new [discussion board](https://discussion.fedoraproject.org/c/server/coreos). Links to documentation and more will be added once they're available.
 
 ![Welcome to Fedora CoreOS](https://coreos.fedoraproject.org/images/welcomefedoracoreos.jpg)
 
